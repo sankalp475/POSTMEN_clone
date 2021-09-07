@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<script type="module" src="./js/index.js"></script>
+</head>
+
+<body>
+	<div class="P-4">
+		<form class="req-res_container">
+			<select class="select_" data-option id="select_option">
+				<option value="GET">GET</option>
+				<option value="POST">POST</option>
+				<option value="PUT">PUT</option>
+				<option value="DELETE">DELETE</option>
+			</select>
+			<input type="text" data-url id="postmen_url_">
+			<button class="send" data-send>SEND</button>
+		</form>
+		<div class="tabs">
+			<ul tab-ul data-tab>
+				<li class="nav-list" tab-ul-li>
+					<button class="ml nav-lnk active-tab" data-tab-ul-li-req-tav="params">params</button>
+				</li>
+				<li class="nav-list" tab-ul-l>
+					<button class="nav-lnk" data-tab-ul-li-req-tav="headers">headers</button>
+				</li>
+				<li class="nav-list" tab-ul-l>
+					<button class="nav-lnk" data-tab-ul-li-req-tav="JSON">JSON</button>
+				</li>
+			</ul>
+			<div class="tab-comtent params active-tab_div" id="params" data-params-query-tab>
+				<div class="param-inp"></div>
+				<button class="add-params-query">add</button>
+			</div>
+			<div class="tab-comtent headers" id="headers" data-headers-tab>
+				<div class="param-inp"></div>
+				<button class="add-params-query">add</button>
+			</div>
+			<div class="tab-comtent JSON" id="JSON" data-JSON-tab>
+				<div class="data_request_contaner" data_request_contaner>
+				</div>
+			</div>
+		</div>
+
+		<h1 class="ml text none" id="status_text_" style="margin-top: 5px;">Responce</h1>
+		<div class="ml none" status_text_div style="font-family: var(--f); display: flex; margin-top: 20px;">
+			<div  class="" style="margin-top: 5px;">
+				<h4>status: <span id="status_text"></span></h4>
+			</div>
+		</div>
+		<div class="tabs-responce none" data-api-responce-editor>
+			<ul class="tab-ul" tab-ul>
+				<li class="nav-list" tab-ul-li>
+					<button class="ml nav-lnk-res active-tab-res" data-tab-ul-li-req-tav="JSON">JSON</button>
+				</li>
+				<li class="nav-list" tab-ul-li>
+					<button class="nav-lnk-res" headers-responce data-tab-ul-li-req-tav="headers">headers</button>
+				</li>
+			</ul>
+			<div class="tab-comtent params_div active-tab_div" data-params-query-tab tab-responce-comtent>
+				<code class="_code_container_"></code>
+			</div>
+			<div class="tab-comtent headers" id="headers_tab" tab-responce-comtent>
+				sdfsf
+			</div>
+		</div>
+	</div>
+
+	<template id="template_div_content">
+		<div class="param-input-div" data-key-value-pair>
+			<input type="text" data-key class="input-params-data" placeholder="key">
+			<input type="text" data-value class="input-params-data" placeholder="value">
+			<button class="renove" onclick="removeElement(this.parentElement);">remove</button>
+		</div>
+	</template>
+
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>
+	
+		const removeElement = (propr) => {
+			const parentElm = propr;
+			parentElm.setAttribute(
+				"style",
+				"display:none;"
+			)
+		}
+			
+
+	</script>
+</body>
+
+</html>

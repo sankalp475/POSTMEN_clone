@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+	--primary-color: "var(--primary-color)"
+} */
+
+:root {
+	--primary-color: hsl(171, 100%, 41%);
+	--primary-color-red:hsl(348, 100%, 61%);
+	--white: #ffffff;
+	--f:"Operator Mono";
+}
+
+[class="P-4"]{
+	padding: 40px;
+	/* color: hsl; */
+}
+[class="cm-editor ͼ1 ͼ2 ͼ4 ͼo"],
+.ͼ1,.ͼ2,.ͼ4,.ͼo{
+	border: none ,!important;
+	outline: none !important;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	height: 100%;
+	width: 100%;
+	background-color: tomato;
+}
+[class="cm-editor ͼ1 ͼ2 ͼ4 ͼo"],
+.ͼ1,.ͼ2,.ͼ4,.ͼo::-webkit-scrollbar{
+	background: transparent;
+}
+[class="cm-editor ͼ1 ͼ2 ͼ4 ͼo"],
+::-webkit-scrollbar-thumb{
+	background: transparent;
+}
+.cm-scroller::-webkit-scrollbar{
+    background-color: transparent;
+}
+.cm-scroller::-webkit-scrollbar-thumb{
+	background-color: transparent;
+}
+
+.req-res_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* align-content: center; */
+	align-self: center;
+	margin: auto;
+}
+
+.select_ {
+	padding: 5px 15px;
+	outline: none;
+	font-family: Operator Mono;
+	font-size: 1.1rem;
+	border-right: 0px;
+	/* border-left: 0px; */
+	/* border-right: 0px; */
+	border-top: 2px solid var(--primary-color);
+	border-bottom: 2px solid var(--primary-color);
+	border-left: 2px solid var(--primary-color);
+	border-right: 1px solid var(--primary-color);
+}
+
+input[type="text"]{
+	padding: 6px 15px;
+	outline: none;
+	font-family: Operator Mono;
+	font-size: 1.1rem;
+	margin-left: -4.5px;
+	width: 67%;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 2px solid var(--primary-color);
+	border-bottom: 2px solid var(--primary-color);
+}
+
+button[class="send"]{
+	padding: 6px 15px;
+	outline: none;
+	font-family: Operator Mono;
+	font-size: 1.1rem;
+	margin-left: -4.5px;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 2px solid var(--primary-color);
+	border-bottom: 2px solid var(--primary-color);
+	border-left: 1px solid var(--primary-color);
+	border-right: 1px solid var(--primary-color);
+	background-color: #fff;
+}
+
+ul{
+	display: flex;
+	flex-direction: row;
+}
+
+[class="nav-list"]{
+	list-style: none;
+	/* margin-left: 10px; */
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.ml{
+	margin-left: 10px;
+}
+
+.nav-lnk{
+	padding: 6px 15px;
+	background-color: transparent;
+	border: 1px solid #cacaca3f ;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-family: var(--f);
+	border-bottom: #fff;
+    
+}
+
+.active-tab
+,.nav-lnk:hover{
+	border-color: var(--primary-color);
+}
+
+.tab-comtent{
+	width: 96.45%;
+	margin-left: 10px;
+	border: 1px solid #caacca;
+	border:1px solid var(--primary-color);
+	position: relative;
+	/* padding: 1px; */
+}
+.add-params-query {
+	padding: 7px 20px;
+	border: 1px solid red;
+	background-color: transparent;
+	color: red;
+	font-family: var(--f);
+	position: absolute;
+	/* bottom: 0; */
+	top: 0;
+	right: 0;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+.data_request_contaner {
+	height:100%;
+}
+
+.active-tab_div{
+	display: block !important;
+}
+
+.nav-lnk-res {
+	padding: 6px 15px;
+	background-color: transparent;
+	border: 1px solid #cacaca3f ;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-family: var(--f);
+	border-bottom: #fff;
+}
+.active-tab-res
+,.nav-lnk-res:hover{
+	border-color: var(--primary-color);
+}
+
+[tab-responce-comtent],
+.tab-res-div{
+	width: 96.45%;
+    height: 480px;
+	/* background-color: rgba(137, 43, 226, 0.453); */
+	margin-left: 10px;
+	border: 1px solid #caacca;
+	border:1px solid var(--primary-color);
+	position: relative;
+}
+
+.none{
+    display: none !important;
+}
+
+
+.input-params-data {
+	padding: 5px 10px !important;
+	border: 1px solid hsl(171, 100%, 41%) !important;
+	width: 510px !important;
+}
+
+.param-input-div{
+	display: flex;
+	flex: 1;
+	margin-bottom: 5px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top: 15px;
+	z-index: 999;
+	position: relative;
+	top: 10px;
+}
+.renove{
+	padding: 5px 10px !important;
+	border: 1px solid hsl(348, 100%, 61%) !important;
+	background-color: transparent;
+	font-family:var(--f) ;
+	color: hsl(348, 100%, 61%);
+	margin-left: 10px;
+}
+
+.param-inp {
+	padding: 20px;
+}
+
+.text{
+	font-family: var(--f);
+}
